@@ -1,1 +1,27 @@
 // Navigation code here
+
+.navi {
+    width: 100%;
+    background-color: @wild-sand;
+    border-bottom: 1px solid @sea-shell;
+    .logo {
+        padding: 15px 0;
+        h1 {
+            text-align: center;
+            font-size: 3.8rem;
+        }
+    }
+
+    nav {
+        text-align: center;
+        padding-bottom: 15px;
+        a {
+            color: black;
+            padding-right: 3%;
+
+            &:last-of-type {
+                padding-right: none;
+            }
+        }
+    }
+}
