@@ -2,19 +2,6 @@
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
-## Instructions
-
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
-
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
-
-You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in advanced css and your command of the concepts and techniques in responsive web design and preprocessing.
-
-You have three hours to complete this challenge. Plan your time accordingly.
-
-## Commits
-
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager.
 
 ## Description
 
@@ -34,43 +21,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive sites use absolute units and change layout based on media queries. Responsive units use relative units and change layout based on media queries.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+It means to design the mobile styling as the base/default and add media queries in increments going larger.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It uses the browser’s default font size and sets at a percentage of that instead of us assigning absolute units. Usually default font sizes are 16px, so 62.5% is equal to 10px which makes it easy to track increments.
+
 4. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing is a way to take redundancy out of your styling and simplify into rules using variables. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+Fovourite: parametric mixins
+Most trouble: nesting order for CSS. Missing a bracket can cause a lot of pain. also import order. without you giving me the import order I could see a lot of issues here.
 
-## Project Set Up
 
-Follow these steps to set up your project:
-
-### Git Set up
-
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
- 
-Follow these steps for completing your project.
-
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
-
-### Preprocessor Set up
-
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
