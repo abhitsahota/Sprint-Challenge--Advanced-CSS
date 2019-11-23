@@ -4,12 +4,17 @@
 
   .intro {
 
+    img {
+      width: 100%;
+        border-radius: 5px;
+    }
+
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
   
   }
@@ -58,6 +63,17 @@
       }
 
       .btn {
+        button {
+          .button-layout(@btn-bg-color, white, 1.8rem);
+          border: none;
+          border-radius: 5px;
+          padding: 5px 15px;
+          cursor: pointer;
+
+          &:hover {
+            .button-layout(white,@btn-bg-color, 1.8rem);
+          }
+        }
       }
     }
 
